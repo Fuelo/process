@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <script src="www/libs/vue.js"></script>
+</head>
+<body>
+  <h1>Processing Power!</h1>
+  <!-- All of the Node.js APIs are available in this renderer process. -->
+  <!-- <div id="app"> -->
+    <!--
+    </div>
+
+  </div>
+ -->
+  <div id="app-5">
+  <p>{{ message }}</p>
+  <div>
+    Test: {{ test }}
+  </div>
+  <div>
+  timeSinceStartup: {{counter}}
+  </div>
+  Total Cores: {{ totalCores}}
+  <div>
+  Cpu Usage: {{ cpuUsage }}
+  </div>
+  <div>
+  Avarage Clock: {{ avarageClock }}
+</div>
+
+  <button v-on:click="incrementTest">Increment Test</button>
+</div>
+</body>
+<script>
+// You can also require other files to run in this process
+require('./renderer.js')
+require('./renderer0.js')
+</script>
+</html>
